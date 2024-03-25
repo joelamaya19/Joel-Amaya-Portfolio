@@ -111,6 +111,20 @@ section p {
     white-space: nowrap;
 }
 
+.projects-layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-layout img {
+    width: calc(50% - 10px); 
+    margin: 5px; 
+}
+
+
+.mycontacts {
+    margin: 20px;
+}
 
 footer {
     font-family:'Courier New', Courier, monospace;

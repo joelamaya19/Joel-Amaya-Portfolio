@@ -20,8 +20,8 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #fff;
-    color: black; /* Change to desired text color */
-    border-bottom: 4px solid #ce0000;
+    color: black; 
+    border-bottom: 3px solid #ce0000;
 }
 
 .headername {
@@ -69,18 +69,30 @@ header {
 }
 
 .navbar ul li {
-    margin-right: 20px; /* Adjust spacing between navbar items */
+    margin-right: 20px; 
 }
-
 
 .navbar ul li a {
     text-decoration: none;
-    color: inherit; /* Inherit color from parent (header) */
+    color: inherit; 
     font-size: 18px;
     font-weight: bold;
 }
 
 .navbar ul li a:hover {
-    color: #e49292; /* Change to desired color on hover */
-    transform: scale(1.1); /* Scale up effect on hover */
+    color: #ce0000; 
+    transform: scale(1.1); 
+}
+
+footer {
+    position: fixed;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; 
+    color: var(--font-color); 
+    padding: 10px 20px; 
+    border-top: 2px solid #ce0000; 
 }

@@ -16,6 +16,8 @@ This website if for those interested in my skills and projects. Any potential em
 
 ## Links
 
+- [GitHub Website](https://joelamaya19.github.io/Joel-Amaya-Portfolio/)
+
 ## License
 
 None

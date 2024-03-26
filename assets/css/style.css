@@ -64,7 +64,6 @@ header {
 }
 
 .navbar ul {
-    list-style-type: none;
     display: flex;
 }
 
@@ -118,18 +117,67 @@ section p {
     padding: 10px;
     margin: 20px;
     white-space: nowrap;
+    align-content: center;
+}
+
+.projectsection {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%; 
 }
 
 .projects-layout {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    list-style: none;
 }
 
-.projects-layout img {
-    width: calc(50% - 10px); 
-    margin: 5px; 
+.projects-layout li {
+    width: calc(50% - 12px);
+    position: relative;
+    margin: 6px;
 }
 
+.projects-layout li img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ce0000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0); 
+}
+
+.projects-layout li:hover {
+    transform: scale(1.01); 
+}
+
+.projects-layout li:hover img {
+    filter: grayscale(0%); 
+    box-shadow: 0 0 20px #ce0000; 
+}
+
+.projects-layout li:hover .label {
+    box-shadow: inset 0 0 20px #fff;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 .mycontacts {
     margin: 20px;
